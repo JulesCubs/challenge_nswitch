@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: black;
+}
+
+.logo {
+    margin-top: 8%;
+    height: 500px;
+    width: 100vw;
+    text-transform: uppercase;
+    color: white;
+    background-color: #dd0006;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo_top {
+    height: 40%;
+    width: 30%;
+    position: relative;
+    top: 15%;
+    display: flex;
+}
+
+.logo_top div {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+} 
+
+.logo_top--left{
+    background-image: url("./logonswleft.png");
+    background-position: 95%;
+    animation: logoleft 1.5s infinite;
+}
+
+@keyframes logoleft {
+    0% {
+        transform: translateY(0);	
+    }
+    60%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(0);	
+    }
+}
+
+.logo_top--right{    
+    background-image: url("./logonswright.png");
+    background-position: 5%;
+    animation: logoright 1.5s infinite;
+}
+
+@keyframes logoright {
+    0%{
+        transform: translateY(-76px);
+    }
+    60%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(0);	
+    }
+}
+
+.logo_down {
+    margin-bottom: 3%;
+    height: 35%;
+    width: 100%;
+    text-align: center;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo_down--1 {
+    height: 27%;
+    width: 100%;
+    padding-left: 2%;
+    overflow: hidden;
+    font-weight: bolder;
+    font-size: 46px;
+    letter-spacing: .5em;
+    text-align: center;
+}
+
+.logo_down--2 {
+    width: 95%;
+    font-size: 100px;
+    line-height: .1%;
+}
+
+.logo_down--3 {
+    width: 5%;
+    font-size: 10px;
+    position: absolute;
+    top: 80%;
+    right: 33%;
+}
